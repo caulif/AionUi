@@ -7,7 +7,7 @@ type AcpUserErrorContext = {
 };
 
 export const formatAcpUserErrorMessage = (error: unknown, context: AcpUserErrorContext): string => {
-  const rawMessage = parseError(error);
+  const rawMessage = String(parseError(error));
   const target = `${context.backend}${context.modelId ? ` / ${context.modelId}` : ''}`;
   const normalized = rawMessage.toLowerCase();
 
