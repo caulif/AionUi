@@ -260,6 +260,8 @@ export type TChatConversation =
         isHealthCheck?: boolean;
         /** Cron job ID that spawned this conversation */
         cronJobId?: string;
+        /** 自定义分组名称 / Custom group name */
+        groupName?: string;
       }
     >
   | Omit<
@@ -307,6 +309,8 @@ export type TChatConversation =
           isHealthCheck?: boolean;
           /** Cron job ID that spawned this conversation */
           cronJobId?: string;
+          /** 自定义分组名称 / Custom group name */
+          groupName?: string;
         }
       >,
       'model'
@@ -338,6 +342,8 @@ export type TChatConversation =
           isHealthCheck?: boolean;
           /** Cron job ID that spawned this conversation */
           cronJobId?: string;
+          /** 自定义分组名称 / Custom group name */
+          groupName?: string;
         }
       >,
       'model'
@@ -385,6 +391,8 @@ export type TChatConversation =
           isHealthCheck?: boolean;
           /** Cron job ID that spawned this conversation */
           cronJobId?: string;
+          /** 自定义分组名称 / Custom group name */
+          groupName?: string;
         }
       >,
       'model'
@@ -437,6 +445,8 @@ export type TChatConversation =
           isHealthCheck?: boolean;
           /** Cron job ID that spawned this conversation */
           cronJobId?: string;
+          /** 自定义分组名称 / Custom group name */
+          groupName?: string;
         }
       >,
       'model'
@@ -471,6 +481,8 @@ export type TChatConversation =
         lastTokenUsage?: TokenUsageData;
         /** Cron job ID that spawned this conversation */
         cronJobId?: string;
+        /** 自定义分组名称 / Custom group name */
+        groupName?: string;
       }
     >;
 
